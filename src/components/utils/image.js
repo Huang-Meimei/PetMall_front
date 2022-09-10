@@ -1,10 +1,5 @@
-import img1 from './1.jpeg';
-import img2 from './2.jpeg';
-import img3 from './3.jpeg';
-import img4 from './4.jpeg';
-
-export var allImages=[
-    {num:1,src:img1},
-    {num:2,src:img2},
-    {num:3,src:img3}
+export const allImages=[
+    {id:1,src:require('./1.jpeg')},
+    {id:2,src:require('./2.jpeg')},
+    {id:3,src:require('./3.jpeg')}
 ];

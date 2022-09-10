@@ -290,22 +290,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
-.skill {
+.fairies {
   padding: 0 0 50px 0;
   position: relative;
 }
-.skill-bx {
+.fairy-bx {
   background: #151515;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
-.skill h2 {
+.fairies h2 {
 	font-size: 45px;
 	font-weight: 700;
 }
-.skill p {
+.fairies p {
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
@@ -330,17 +330,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
-.project {
+.mall {
   padding: 80px 0;
   position: relative;
   background-color: black;
 }
-.project h2 {
+.mall h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
-.project p {
+.mall p {
   color: #B8B8B8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -349,17 +349,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
+.mall .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
-.project .nav.nav-pills .nav-item {
-  width: 33.33333%;
+.mall .nav.nav-pills .nav-item {
+  width: 25%;
 }
-.project .nav.nav-pills .nav-link {
+.mall .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -373,7 +373,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-.project .nav.nav-pills .nav-link::before {
+.mall .nav.nav-pills .nav-link::before {
     content: "";
     position: absolute;
     width: 0;
@@ -384,10 +384,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     z-index: -1;
     transition: 0.3s ease-in-out;
 }
-.project .nav.nav-pills .nav-link.active::before {
+.mall .nav.nav-pills .nav-link.active::before {
     width: 100% !important;
 }
-.project .nav.nav-pills .nav-link.active {
+.mall .nav.nav-pills .nav-link.active {
     border: 1px solid rgba(255, 255, 255, 1);
 }
 .nav-link#projects-tabs-tab-first {
@@ -395,10 +395,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 55px 0px 0px 55px;
 }
 .nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 .nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-fourth {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }

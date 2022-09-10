@@ -8,16 +8,15 @@ import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 import { render } from "@testing-library/react";
 import { allImages } from "./utils/image";
-import img1 from './utils/1.jpeg';
-import img2 from './utils/2.jpeg';
-import img3 from './utils/3.jpeg';
 import { useEffect } from "react";
+import Slide from "./Slide"
+import LeftArrow from './LeftArrow';
+import RightArrow from './RightArrow';
 
 export const Skills = () => {
 
   const fairies = [];
   const user = "default"
-  const [role,setRole] = useEffect([])
 
   const responsive = {
     superLargeDesktop: {
@@ -39,32 +38,17 @@ export const Skills = () => {
     }
   };
 
-  useEffect(() => {
-    
-  }
-  ,[role]);
-
-  const renderFairyImages = () => {
-    fairies.push(<img src={img1}></img>)
-    fairies.push(<img src={img2}></img>)
-    fairies.push(<img src={img3}></img>)
-    return(
-      <div>
-        {fairies.map((item,index)=>{
-          return item
-        })}
-      </div>
-
-    )
-      
-  }
+  const slides = allImages.reverse().map((image, index) => {
+    console.log(image)
+      return <Slide key={index} image={image.src} />
+  });
 
   return (
-    <section className="skill" id="skills">
+    <section className="fairies" id="fairies">
         <div className="container">
             <div className="row">
                 <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
+                    <div className="fairy-bx wow zoomIn">
                         <h2>My Collection of Fairies</h2>
                         <p>Tell me where their home is,
                           <br></br>Is it in the garden? ‘Neath the clustering vine?
@@ -76,10 +60,8 @@ export const Skills = () => {
                           <br></br>But in brightest sunshine, In this very room.
                         </p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                          {
-                              useEffect()
-                          }
-                        </Carousel>
+                          {slides}
+                       </Carousel>
                     </div>
                 </div>
             </div>
